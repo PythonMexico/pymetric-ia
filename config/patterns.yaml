@@ -1,0 +1,196 @@
+# Patrones de detección para consultas
+# Configuración centralizada para Pymetric IA
+
+# Patrones para detectar preguntas sobre el sistema/modelo
+system_patterns:
+  - "qué modelo"
+  - "que modelo" 
+  - "what model"
+  - "which model"
+  - "modelo actual"
+  - "current model"
+  - "modelo estás usando"
+  - "modelo estas usando"
+  - "qué versión"
+  - "que version"
+  - "what version"
+  - "versión de claude"
+  - "version de claude"
+  - "claude sonnet"
+  - "claude haiku"
+  - "claude opus"
+  - "anthropic"
+  - "configuración"
+  - "configuracion"
+  - "configuration"
+  - "settings"
+
+# Patrones para preguntas educativas sobre visualización
+educational_viz_patterns:
+  - "qué es visualización"
+  - "que es visualizacion"
+  - "qué es la visualización"
+  - "que es la visualizacion"
+  - "what is visualization"
+  - "what is data visualization"
+  - "tipos de gráficos"
+  - "tipos de graficos"
+  - "types of charts"
+  - "cuándo usar"
+  - "cuando usar"
+  - "when to use"
+  - "para qué sirve un gráfico"
+  - "para que sirve un grafico"
+  - "diferencia entre gráficos"
+  - "diferencia entre graficos"
+  - "cómo elegir"
+  - "como elegir"
+  - "how to choose"
+  - "qué gráfico usar"
+  - "que grafico usar"
+  - "mejores prácticas"
+  - "mejores practicas"
+  - "best practices"
+
+# Patrones para detectar solicitudes de creación de gráficos
+visualization_creation_patterns:
+  - "crea"
+  - "crear"
+  - "genera"
+  - "generar"
+  - "haz"
+  - "hacer"
+  - "dibuja"
+  - "dibujar"
+  - "muestra"
+  - "mostrar"
+  - "construye"
+  - "construir"
+  - "elabora"
+  - "elaborar"
+
+# Tipos de gráficos reconocidos
+chart_types:
+  - "gráfico"
+  - "grafico"
+  - "chart"
+  - "plot"
+  - "barras"
+  - "líneas"
+  - "lineas"
+  - "scatter"
+  - "histograma"
+  - "pie"
+  - "pastel"
+  - "boxplot"
+  - "heatmap"
+
+# Patrones específicos de solicitud de gráfico
+specific_chart_patterns:
+  - "gráfico de"
+  - "grafico de"
+  - "chart of"
+  - "plot of"
+  - "comparar"
+  - "comparación"
+  - "tendencia"
+  - "correlación"
+  - "correlacion"
+  - "distribución"
+  - "distribucion"
+
+# Patrones para detectar consultas sobre datasets
+dataset_query_patterns:
+  specific:
+    - "describir el dataset"
+    - "describe el dataset"
+    - "describir dataset"
+    - "me puedes describir"
+    - "puedes describir"
+    - "describe los datos"
+    - "qué contiene el dataset"
+    - "que contiene el dataset"
+    - "información del dataset"
+    - "informacion del dataset"
+    - "resumen del dataset"
+    - "resumen de los datos"
+    - "análisis del dataset"
+    - "analisis del dataset"
+    - "estadísticas del dataset"
+    - "estadisticas del dataset"
+  
+  general:
+    dataset_words:
+      - "dataset"
+      - "datos"
+      - "data"
+    action_words:
+      - "describir"
+      - "describe"
+      - "mostrar"
+      - "muestra"
+      - "explica"
+      - "explain"
+    request_words:
+      - "puedes"
+      - "me puedes"
+      - "podrías"
+      - "podrias"
+      - "can you"
+
+# Patrones para consultas de recomendación de visualización
+visualization_recommendation_patterns:
+  - "qué métricas"
+  - "que metricas"
+  - "what metrics"
+  - "qué gráficos"
+  - "que graficos"
+  - "what charts"
+  - "qué visualizaciones"
+  - "que visualizaciones"
+  - "what visualizations"
+  - "me recomiendas"
+  - "recomiendas"
+  - "recommend"
+  - "sugieres"
+  - "suggest"
+  - "qué debería graficar"
+  - "que deberia graficar"
+  - "what should I plot"
+  - "qué puedo visualizar"
+  - "que puedo visualizar"
+  - "what can I visualize"
+  - "mejores gráficos"
+  - "mejores graficos"
+  - "best charts"
+  - "gráficos apropiados"
+  - "graficos apropiados"
+  - "appropriate charts"
+
+# Patrones educativos que NO deben generar gráficos
+educational_exclusion_patterns:
+  - "qué es"
+  - "que es"
+  - "what is"
+  - "define"
+  - "definir"
+  - "explica"
+  - "explain"
+  - "cómo funciona"
+  - "como funciona"
+  - "how does"
+  - "diferencia entre"
+  - "tipos de"
+  - "cuáles son"
+  - "cuales son"
+  - "para qué sirve"
+  - "para que sirve"
+
+# Configuración de idiomas soportados
+supported_languages:
+  - "es"  # Español
+  - "en"  # Inglés
+
+# Configuración de versión
+version: "1.0"
+last_updated: "2024-09-24"

@@ -1,0 +1,49 @@
+[project]
+name = "metric-grapher-ia"
+version = "1.0"
+description = "Metric Grapher IA"
+authors = [
+    { name = "Hugo Ramirez", email = "hughpythoneer@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "sqlalchemy>=2.0.32",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.0",
+    "langchain>=0.0.286",
+    "langchain-community>=0.0.286",
+    "langchain-openai>=0.0.286",
+    "chainlit>=0.1.0",
+    "anthropic>=0.1.0",
+    "plotly>=5.17.0",
+    "pandas>=2.1.0",
+    "numpy>=1.24.0",
+    "openpyxl>=3.1.0",
+    "xlsxwriter>=3.1.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "kaleido>=0.2.1",
+    "pyyaml>=6.0",
+    "pymongo>=4.5.0",
+]
+
+[project.scripts]
+dev = "uvicorn app.main:app --reload"
+tests = "pytest -v"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
